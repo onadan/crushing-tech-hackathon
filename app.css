@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --grey-50: #656266;
+  --grey-100: #616161;
+  --grey-200: #322f33;
+  --grey-300: #1c181d;
+  --light: #e3e3e3;
+  --mid: #616161;
+  --dark: #475467;
+  --S50: #ebebeb;
+  --S100: #e1e1e1;
+  --S200: #616161;
+  --hover: #f7f7f7;
+  --pressed: #f0f0f0;
+  --focused: #005bd3;
+  --background: #f1f1f1;
+  --white: #ffffff;
+}
+
+nav {
+  height: 56px;
+  width: 100%;
+  background-color: var(--grey-300);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  gap: 10px;
+}
+
+.brand {
+  cursor: pointer;
+}
+
+.search_container {
+  max-width: 480px;
+  width: 100%;
+}
+
+.search_bar {
+  width: 100%;
+  height: 32px;
+  color: var(--light);
+  background-color: var(--grey-200);
+  border-radius: 8px;
+  border: 1px solid var(--S200);
+  padding: 0 8px;
+  outline: 1px solid transparent;
+}
+
+.search_bar:hover {
+  border: 1px solid var(--S100);
+}
+
+.search_bar:focus {
+  border: none;
+  outline-width: 2px;
+  outline-color: var(--S100);
+}
+
+.nav_items {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.notification_icon {
+  background-color: var(--grey-200);
+  border-radius: 8px;
+  height: 32px;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.notification_icon img {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.profile_item {
+  background-color: var(--grey-200);
+  border-radius: 8px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  padding: 8px 2px 8px 10px;
+  gap: 8px;
+  font-weight: medium;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.profile_item p {
+  color: var(--light);
+}
+
+.profile_item .avatar {
+  height: 28px;
+  aspect-ratio: 1/1;
+  border-radius: 8px;
+  color: #0000002c;
+  background-color: #36fba1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .notification_icon {
+    background-color: transparent;
+  }
+  .profile_item {
+    background-color: transparent;
+    padding: 0px 4px;
+  }
+  .profile_item p {
+    display: none;
+  }
+}

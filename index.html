@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/logo.svg" />
+    <link rel="stylesheet" href="./app.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Shopify</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="https://shopify.com/">
+          <picture>
+            <source
+              class="brand"
+              srcset="./assets/logo-full.svg"
+              media="(min-width: 769px)"
+              height="30px"
+            />
+            <img
+              class="brand"
+              src="./assets/logo.svg"
+              alt="Go to shopify.com"
+              height="32"
+            />
+          </picture>
+        </a>
+
+        <div class="search_container">
+          <input class="search_bar" type="text" name="q" placeholder="Search" />
+        </div>
+
+        <div class="nav_items">
+          <button
+            class="notification_icon"
+            aria-expanded="false"
+            aria-label="Display Notification"
+            role="button"
+            tabindex="0"
+          >
+            <img
+              src="./assets/notification.svg"
+              alt="notification"
+              aria-hidden="true"
+            />
+          </button>
+
+          <div
+            class="profile_item"
+            tabindex="0"
+            aria-label="Display Menu"
+            aria-expanded="false"
+            role="button"
+          >
+            <p>Davii Collections</p>
+            <div class="avatar">DC</div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--  -->
+  </body>
+</html>
